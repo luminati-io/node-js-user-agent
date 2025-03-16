@@ -2,7 +2,7 @@
 
 [![Promo](https://github.com/luminati-io/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.com/) 
 
-This guide explains hot to set the `User-Agent` header with Node.js and implement user agent rotation to evade anti-bot detection:
+This guide explains hot to set the `User-Agent` header with Node.js and implement user agent rotation to evade anti-bot detection while [scraping with node.js](https://brightdata.com/blog/how-tos/web-scraping-with-node-js):
 
 - [How to Change the Node.js User Agent Using the Fetch API](#how-to-change-the-nodejs-user-agent-using-the-fetch-api)
   - [Set a User Agent Locally](#set-a-user-agent-locally)
@@ -34,7 +34,7 @@ Below is a breakdown of the components in this user agent string:
 
 The `User-Agent` header helps determine whether a request comes from a trusted browser or automated software.
 
-Web scraping bots often use default or non-browser user agents, making them easy targets for anti-bot systems. These systems analyze the `User-Agent` header to distinguish real users from bots.
+Web scraping bots often use default or non-browser user agents, making them easy targets for anti-bot systems. These systems analyze the `User-Agent` header to distinguish real users from bots. Learn more about [user agents for web scraping](https://brightdata.com/blog/how-tos/user-agents-for-web-scraping-101).
 
 ## What Is the Node.js Default User Agent?
 
@@ -392,7 +392,7 @@ getFetchUserAgent();
 
 Run the script 3 or 4 times. Statistically, you should see different user agent responses as below:
 
-![different user agent responses](https://brightdata.com/wp-content/uploads/2024/08/different-user-agent-responses-1024x298.png)
+![different user agent responses](https://github.com/luminati-io/node-js-user-agent/blob/main/images/different-user-agent-responses-1024x298.png)
 
 This demonstrates that the user agent rotation is working effectively.
 
